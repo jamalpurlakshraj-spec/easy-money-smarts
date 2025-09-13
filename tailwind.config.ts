@@ -58,14 +58,17 @@ export default {
         income: {
           DEFAULT: "hsl(var(--income))",
           foreground: "hsl(var(--income-foreground))",
+          glow: "hsl(var(--income-glow))",
         },
         expense: {
           DEFAULT: "hsl(var(--expense))",
           foreground: "hsl(var(--expense-foreground))",
+          glow: "hsl(var(--expense-glow))",
         },
         budget: {
           DEFAULT: "hsl(var(--budget))",
           foreground: "hsl(var(--budget-foreground))",
+          glow: "hsl(var(--budget-glow))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -82,11 +85,21 @@ export default {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-income': 'var(--gradient-income)',
         'gradient-expense': 'var(--gradient-expense)',
+        'gradient-budget': 'var(--gradient-budget)',
         'gradient-card': 'var(--gradient-card)',
+        'gradient-glass': 'var(--gradient-glass)',
+        'gradient-hero': 'var(--gradient-hero)',
       },
       boxShadow: {
         'card': 'var(--shadow-card)',
         'elevated': 'var(--shadow-elevated)',
+        'glow': 'var(--shadow-glow)',
+        'income': 'var(--shadow-income)',
+        'expense': 'var(--shadow-expense)',
+        'budget': 'var(--shadow-budget)',
+      },
+      backdropBlur: {
+        xs: '2px',
       },
       borderRadius: {
         lg: "var(--radius)",

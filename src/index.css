@@ -8,59 +8,73 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 98%;
-    --foreground: 240 10% 9%;
+    --background: 240 12% 6%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 9%;
+    --card: 240 10% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 9%;
+    --popover: 240 10% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 200 100% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 210 80% 65%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 45%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
+    --success: 142 76% 55%;
+    --success-foreground: 142 76% 15%;
 
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 100%;
+    --warning: 38 92% 60%;
+    --warning-foreground: 38 92% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 65%;
+    --destructive-foreground: 0 84.2% 15%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 200 100% 45%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 210 80% 65%;
 
-    /* Finance-specific colors */
-    --income: 142 76% 36%;
-    --income-foreground: 0 0% 100%;
+    /* Advanced Finance Colors */
+    --income: 142 70% 55%;
+    --income-foreground: 142 70% 15%;
+    --income-glow: 142 70% 45%;
     
-    --expense: 0 84.2% 60.2%;
-    --expense-foreground: 0 0% 100%;
+    --expense: 0 75% 65%;
+    --expense-foreground: 0 75% 15%;
+    --expense-glow: 0 75% 55%;
     
-    --budget: 38 92% 50%;
-    --budget-foreground: 0 0% 100%;
+    --budget: 38 85% 60%;
+    --budget-foreground: 38 85% 15%;
+    --budget-glow: 38 85% 50%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(200 100% 45%), hsl(220 100% 55%));
-    --gradient-income: linear-gradient(135deg, hsl(142 76% 36%), hsl(160 76% 40%));
-    --gradient-expense: linear-gradient(135deg, hsl(0 84.2% 60.2%), hsl(15 84.2% 65%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(240 10% 98%));
+    /* Advanced Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 80% 65%) 0%, hsl(220 85% 70%) 50%, hsl(230 90% 75%) 100%);
+    --gradient-income: linear-gradient(135deg, hsl(142 70% 55%) 0%, hsl(160 75% 60%) 50%, hsl(180 80% 65%) 100%);
+    --gradient-expense: linear-gradient(135deg, hsl(0 75% 65%) 0%, hsl(15 80% 70%) 50%, hsl(30 85% 75%) 100%);
+    --gradient-budget: linear-gradient(135deg, hsl(38 85% 60%) 0%, hsl(45 90% 65%) 50%, hsl(52 95% 70%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(240 10% 8% / 0.8) 0%, hsl(240 15% 12% / 0.9) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(240 10% 15% / 0.2) 0%, hsl(240 15% 20% / 0.1) 100%);
+    --gradient-hero: radial-gradient(ellipse at top, hsl(210 80% 65% / 0.3) 0%, transparent 50%);
 
-    /* Shadows */
-    --shadow-card: 0 2px 8px -2px hsl(240 10% 9% / 0.08);
-    --shadow-elevated: 0 8px 30px -8px hsl(240 10% 9% / 0.12);
+    /* Advanced Shadows & Effects */
+    --shadow-card: 0 8px 32px -8px hsl(240 50% 15% / 0.3);
+    --shadow-elevated: 0 20px 60px -12px hsl(240 50% 15% / 0.4);
+    --shadow-glow: 0 0 40px hsl(210 80% 65% / 0.3);
+    --shadow-income: 0 0 30px hsl(142 70% 55% / 0.2);
+    --shadow-expense: 0 0 30px hsl(0 75% 65% / 0.2);
+    --shadow-budget: 0 0 30px hsl(38 85% 60% / 0.2);
+
+    /* Glass Morphism */
+    --glass-border: hsl(240 20% 30% / 0.2);
+    --glass-bg: hsl(240 10% 15% / 0.1);
 
     --radius: 0.5rem;
 
@@ -82,16 +96,16 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 240 12% 6%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 240 10% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 240 10% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
+    --primary: 210 80% 65%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -103,12 +117,12 @@ All colors MUST be HSL.
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 65%;
+    --destructive-foreground: 0 75% 15%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 210 80% 65%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -127,5 +141,63 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background-image: var(--gradient-hero);
+  }
+
+  /* Glassmorphism utilities */
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .glass-strong {
+    background: hsl(240 10% 15% / 0.3);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid hsl(240 20% 30% / 0.3);
+  }
+
+  /* Animation utilities */
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px hsl(210 80% 65% / 0.2);
+    }
+    to {
+      box-shadow: 0 0 30px hsl(210 80% 65% / 0.4);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+      filter: brightness(1);
+    }
+    50% {
+      opacity: 0.8;
+      filter: brightness(1.2);
+    }
   }
 }
